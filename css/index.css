@@ -1,3 +1,84 @@
 body{
-    background-image: url(./assets/cloud.svg);
+    background-image: url("../assets/predios.png");
+    background-position: bottom;
+    background-position-y: 70vh;
+    background-repeat: repeat-x;
+    height: 98vh;
+}
+
+.nuvens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.n01{
+    margin-top: 10vh;
+    transform: translatey(0px);
+	animation: n01 7s ease-in-out infinite;
+}
+.n02{
+    margin-top: 38vh;
+    transform: translatey(0px);
+	animation: n02 6s ease-in-out infinite;
+}
+.n03{
+    margin-top: 20vh;
+    transform: translatey(0px);
+	animation: n03 4s ease-in-out infinite;
+}
+.n04{
+    margin-top: 5vh;
+    transform: translatey(0px);
+	animation: n04 6s ease-in-out infinite;
+}
+
+@keyframes n04 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes n03 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes n02 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-25px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes n02 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.logo{
+    width: 10vw;
+    position: absolute;
+    margin: 35vh auto;
 }
