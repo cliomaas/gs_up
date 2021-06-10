@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./js/funcoes.js"></script>
     <title>Página Inicial - UP!</title>
 </head>
 
@@ -22,16 +23,16 @@
                 </div>
                 <div class="logo">
                     <img class="img-logo" src="./assets/logo.gif" alt="">
-                    <form class="login-form" onsubmit="submitForm(event)">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" required>
+                    <form class="login-form" onsubmit="validar(event)">
+                        <label for="usuario">Usuário:</label>
+                        <input type="usuario" name="usuario" id="usuario" required>
                         <label for="password">Senha:</label>
-                        <input type="password" name="password" id="password" minlength="3" required pattern="[0-9]{6}">
+                        <input type="password" name="password" id="senha" minlength="3" required pattern="[0-9]{5}">
                         <a href="#" class="form-group__forgot-password" onclick="alert('Não implementado')">Esqueci minha
                             senha</a>
                         <div class="botoes">
-                            <a href="./login.html"><input id="login" type="submit" value="Login"></a>
-                            <a href="./tipocadastro.html"><input id="cadastro" type="button" value="Cadastro"></a>
+                            <input id="login" type="submit" value="Login">
+                            <a href="./login_Register.html"><input id="cadastro" type="button" value="Cadastro"></a>
                         </div>
                     </form>
                 </div>
@@ -46,5 +47,4 @@
         </div>
     </body>
 </body>
-
 </html>
