@@ -62,11 +62,11 @@ label{
     width: 230px;
     border-radius: 20px;
     border-color: #FFC727;
-    color: #FFC727;
-    font-size: 16px;
+     font-size: 16px;
     margin: 0.5em;
     border: none;
     background-color: rgba(245, 245, 245, 0.63);
+   
     
 }
 select{
