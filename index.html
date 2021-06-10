@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Página Inicial - UP!</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nuvem">
-            <div class="nuvem n01">
-                <img src="./assets/cloud.svg">
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="nuvem n01">
+                    <img class="nuvem" src="./assets/cloud.svg">
+                </div>
+                <div class="nuvem n02">
+                    <img class="nuvem" src="./assets/cloud.svg">
+                </div>
+                <div class="logo">
+                    <img class="img-logo" src="./assets/logo.gif" alt="">
+                    <form class="login-form" onsubmit="submitForm(event)">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="password">Senha:</label>
+                        <input type="password" name="password" id="password" minlength="3" required pattern="[0-9]{6}">
+                        <a href="#" class="form-group__forgot-password" onclick="alert('Não implementado')">Esqueci minha
+                            senha</a>
+                        <div class="botoes">
+                            <a href="./login.html"><input id="login" type="submit" value="Login"></a>
+                            <a href="./tipocadastro.html"><input id="cadastro" type="button" value="Cadastro"></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="nuvem n03">
+                    <img class="nuvem" src="./assets/cloud.svg">
+                </div>
+                <div class="nuvem n04">
+                    <img class="nuvem" src="./assets/cloud.svg">
+                </div>
             </div>
-            <div class="nuvem n02">
-                <img src="./assets/cloud.svg">
-            </div>
-            <div class="logo">
-                <img class="img-logo" src="./assets/logo.gif" alt="">
-                <div class="play-button"></div>
-            </div>
-            <div class="nuvem n03">
-                <img src="./assets/cloud.svg">
-            </div>
-            <div class="nuvem n04">
-                <img src="./assets/cloud.svg">
-            </div>
+    
         </div>
-
-    </div>
+    </body>
 </body>
 
 </html>

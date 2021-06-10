@@ -48,11 +48,11 @@ body{
     width: 286px;
     text-align: center;
     border-radius: 20px;
-    border-color: #FFC727;
     color: #FFC727;
     font-size: 18px;
     margin: 2.5em 0.5em 0.5em 0.5em;
     cursor: pointer;
+    border: solid 1px #FFC727;
 }
    
        
