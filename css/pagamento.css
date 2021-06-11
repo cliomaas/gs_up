@@ -1,38 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+
 header{
-  width:1199px;
-  height:97px;
+  width:98vw;
   background-color: #FFD46E;
   padding-left:12em;
   padding-top:2em;
+  padding-bottom: 2em;
   margin:0 auto;
 }
 
 h1{
   color:white;
-  font-size:25px;
+  font-size:35px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  padding-bottom:10px;
 }
+
 .container{
   width:90%;
-  background-color: aqua;
-  height:400px;
+  background-color:white;
   margin:0 auto;
-
-}
-footer{
-  height:64px;
-  width:1397px;
-  margin:0 auto;
-  background-color: #FFD46E;
-
+  padding-bottom:5em;
 }
 
-.cartao{
-  width:85vw;
-  height:5vh;
-  margin-top:5px;
-}
 
 .icones-cartao{
   margin-left:40%;
@@ -63,4 +60,116 @@ p{
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+
+ input[type=text]{
+padding-left:2em;
+outline-color:#FFD46E;
+}
+ 
+
+
+.cartao{
+  width:85vw;
+  height:5vh;
+  margin-top:5px;
+}
+
+
+.validade{
+  margin-top: 10px;
+  width:45vw;
+  height:5vh;
+}
+.cv{
+  width:37.4vw;
+  height:5vh;
+}
+
+.nome{
+  width:85vw;
+  height:5vh;
+  margin-top:10px;
+}
+
+.cpf{
+  width:85vw;
+  height:5vh;
+  margin-top:10px;
+}
+
+.apelido{
+  width:85vw;
+  height:5vh;
+  margin-top:10px;
+}
+.footer{
+  width:100%;
+  bottom:0;
+  height:120px;
+  background-color: #FFD46E;
+  
+}
+
+.botao-cadastrar{
+  margin-left:45%;
+  bottom:23vh;
+  position:absolute;
+}
+.botao{
+  margin:0 auto;
+  font-size:30px;
+  border-radius: 4px;
+ background-color: #DD6A57;
+ color:white;
+ padding:20px;
+ padding-left:30%;
+ padding-right:30%;
+}
+
+@media screen and (max-width:1100px) {
+ 
+  h1{
+    color:white;
+    font-size:35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom:10px;
+    text-align: center;
+
+    
+  
+  }
+  .container{
+		overflow: hidden;
+	}
+  header{
+    width:100%;
+    padding-left:12em;
+    padding-top:2em;
+    padding-bottom: 2em;
+    margin:0 auto;
+    
+  }
+  input[type=text]{
+    width:100vw;
+    outline-color:#FFD46E;
+    }
+  
+.validade{
+width:100vw;
+
+ 
+}
+.cv{
+width:100vw;
+margin-top:10px;
+}
+
+
+  footer{
+    width:100%;
+    bottom:0;
+  }
+
+  
 }
