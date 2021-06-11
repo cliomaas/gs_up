@@ -1,0 +1,66 @@
+header{
+  width:1199px;
+  height:97px;
+  background-color: #FFD46E;
+  padding-left:12em;
+  padding-top:2em;
+  margin:0 auto;
+}
+
+h1{
+  color:white;
+  font-size:25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.container{
+  width:90%;
+  background-color: aqua;
+  height:400px;
+  margin:0 auto;
+
+}
+footer{
+  height:64px;
+  width:1397px;
+  margin:0 auto;
+  background-color: #FFD46E;
+
+}
+
+.cartao{
+  width:85vw;
+  height:5vh;
+  margin-top:5px;
+}
+
+.icones-cartao{
+  margin-left:40%;
+}
+
+.logo-visa{
+  width:74px;
+  height:75px;
+}
+.logo-mastercard{
+  width:74px;
+  height:75px;
+}
+
+.logo-elo{
+  width:74px;
+  height:75px;
+}
+
+h2{
+  text-align: center;
+  color:#C7C7C7;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+p{
+  color:#263238;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
