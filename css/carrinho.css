@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../assets/background_amarelo.svg");
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4em;
+    background-color: white;
+    text-align:left;
+    margin:0 0 4em 0 ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sanduiche{
+    height: 4em;
+    width: 4em;
+}
+div{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    color: white;
+    margin:1em;
+    
+}
+.descricao{
+    font-size: 30px;
+    
+}
+img{
+    height: 100px;
+    margin-left: 1em;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 49vw;
+    margin-right: 5em;
+}
+.entrega{
+    margin:0 0 0 1em;
+    font-size: 30px;
+}
+.entrega2{
+    margin:0.5em 0 0 1em;
+    font-size: 30px;
+}    
+.total{
+    margin-top: 5em;
+}
+.dinheiro{
+    margin-left: 5em;
+    font-size: 50px;
+}
+.string{
+    font-size: 50px;
+}
+.botao{
+    height:63px ;
+    width:440px ;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    color: #D3766A;
+    font-size: 18px;
+    margin-top: 2.5em;
+    cursor: pointer;
+    outline: none;
+}
+.web{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6em;
+}
+@media screen and (min-width:550px) { 
+.movimento1{
+    margin-left: 7.7em;
+}
+.movimento2{
+    margin-left:17em;
+}
+.movimento3{
+    margin-left:15.8em;
+}
+
+}
+
+
+@media screen and (max-width:550px) { 
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 4em;
+        background-color: white;
+        text-align:left;
+        margin:0 0 2em 0 ;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    div{
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+        color: white;
+        margin:1em;
+        
+    }
+    .descricao{
+        font-size: 12px;
+        
+    }
+    img{
+        height: 73px;
+        margin-left: 1em;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        width: 49vw;
+        margin-right: 5em;
+    }
+    .entrega{
+        margin:0 0 0 1em;
+        font-size: 12px;
+    }
+    .entrega2{
+        margin:0.5em 0 0 1em;
+        font-size: 12px;
+    }    
+    .total{
+        margin-top: 5em;
+    }
+    .dinheiro{
+        margin-left: 5em;
+        font-size: 26px;
+    }
+    .string{
+        font-size: 21px;
+    }
+    .botao{
+        height:48px ;
+        width:297px ;
+        border-radius: 20px;
+        text-align: center;
+        border: none;
+        color: #D3766A;
+        font-size: 18px;
+        margin-top: 2.5em;
+    }
+    .web{
+        margin-top: 2em;
+    }
+    
+    
+    
+}
+    
