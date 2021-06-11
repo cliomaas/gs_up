@@ -17,58 +17,66 @@
 
 </body>
 <header>
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <div class="icon nav-icon-5">
+          <i class="fas fa-bars"></i>
+        </div>
+      </button>
+      <div class="dropdown-content">
+        <a href="./index.html">Login</a>
+        <a href="./escolhaCadastro.html">Cadastro</a>
+        <a href="./home.html">Perfil</a>
+        <a href="./pet-shop.html">Loja</a>
+        <a class="pagina-atual" href="./carrinho.html">Carrinho</a>
+        <a href="./pagamento.html">Pagamento</a>
+      </div>
+    </div>
+  </nav>
   <h1>Pagamento</h1>
 </header>
 
 <div class="container">
-  <div class="form-group">
-    <div class="grupo-icone">
-      <h2> Consulte as bandeiras e bancos disponiveis</h2>
-      <p>Saiba Mais</p>
-      <div class="icones-cartao">
-        <img src="./assets/master-icon.svg" alt=" icone-mastercard" class="logo-mastercard">
-        <img src="./assets/visa-icon.svg" alt="icone-visa" class="logo-visa">
-        <img src="./assets/elo-icon.svg" alt="icone-elo" class="logo-elo">
-
-
-      </div>
+  <div class="grupo-icone">
+    <h2> Consulte as bandeiras e bancos disponiveis</h2>
+    <p class="saiba">Saiba Mais</p>
+    <div class="icones-cartao">
+      <img src="./assets/master-icon.svg" alt=" icone-mastercard" class="logo mastercard">
+      <img src="./assets/visa-icon.svg" alt="icone-visa" class="logo visa">
+      <img src="./assets/elo-icon.svg" alt="icone-elo" class="logo elo">
+    </div>
+  </div>
+  <form class="form" method="POST" onsubmit="validarCartao(event)">
+    <div class="form-group">
+      <input type="text" class="form-group cartao" name="txtCartao" id="numcartao" required pattern="[0-9]{13,16}" placeholder="Número do Cartão">
+    </div>
+    <div class="form-group validade">
+      <input type="text" class="form-group-02 validade" name="txtValidade" pattern="\d{1,2}/\d{4}" required id="validade" placeholder="Validade">
+      <input type="text" class="form-group-02 cv" name="txtCv" id="txtCv" pattern="{3}" placeholder="CVV" class="name">
     </div>
 
-
-    <div class="form-group-01">
-      <input type="text" class="form-group cartao" name="txtCartao" id="txtCartao" placeholder="Número do Cartão">
+    <div class="form-group">
+      <input type="text" class="form-group nome" name="txtNome" id="nome" required
+      pattern="[A-Za-z]{1,30}"placeholder="Nome do Titular">
     </div>
 
-    <div class="form-group-02">
-      <input type="text" class="form-group-02 validade" name="txtValidade" id="txtValidade" placeholder="Validade">
-      <input type="text" class="form-group-02 cv" name="txtCv" id="txtCv" placeholder="CVV" class="name">
+    <div class="form-group">
+      <input type="text" class="form-group cpf" name="txtCpf" id="cpf" placeholder="CPF do titular" required
+      pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
     </div>
 
-
-    <div class="form-group-03">
-      <input type="text" class="form-group nome" name="txtNome" id="txtNome" placeholder="Nome do Titular">
+    <div class="form-group">
+      <input type="text" class="form-group apelido" name="txtApelido" id="apelido" placeholder="Apelido do Cartão" pattern="[A-Za-z]{1,30}">
     </div>
-
-    <div class="form-group-04">
-      <input type="text" class="form-group cpf" name="txtCpf" id="txtCpf" placeholder="CPF/CNPJ do titular">
+    <div class="botoes">
+      <input type="submit" value="Cadastrar" class="botao">
     </div>
-
-    <div class="form-group-05">
-      <input type="text" class="form-group apelido" name="txtApelido" id="txtApelido" placeholder="Apelido do Cartão">
-    </div>
-
-
+  </form>
+  <div class="creditos">
+    <p class="nomes"><strong>Créditos:</strong> Ana Ronqui - RM 86641 / Clio Maas - RM 87046 / João Victor
+      Santos - RM 88372 / Reginaldo Souza Junior - RM 89050</p>
   </div>
 </div>
-
-
-<div class="footer">
-  <div class="botao-cadastrar">
-    <input type="button" value="Cadastrar" class="botao">
-  </div>
-
-</div>
-
-
 
 </html>

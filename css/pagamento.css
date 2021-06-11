@@ -1,172 +1,198 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  color: white;
 }
 
-header{
-  width:98vw;
+header {
   background-color: #FFD46E;
-  padding-left:12em;
-  padding-top:2em;
-  padding-bottom: 2em;
-  margin:0 auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 11.5vh;
 }
 
-h1{
-  color:white;
-  font-size:35px;
-  padding-bottom:10px;
+.pagina-atual {
+  color: #F48E1E;
+  font-weight: bold;
 }
 
-.container{
-  width:90%;
-  background-color:white;
-  margin:0 auto;
-  padding-bottom:5em;
-}
-
-
-.icones-cartao{
-  margin-left:40%;
-}
-
-.logo-visa{
-  width:74px;
-  height:75px;
-}
-.logo-mastercard{
-  width:74px;
-  height:75px;
-}
-
-.logo-elo{
-  width:74px;
-  height:75px;
-}
-
-h2{
+a {
+  float: left;
+  font-size: 16px;
+  color: white;
   text-align: center;
-  color:#C7C7C7;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 50%;
+}
+
+a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #DD6A57;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fas {
+  color: #F48E1E;
+  font-size: 3em;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+h1 {
+  color: white;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.container {
+  width: 100vw;
+  background-color: white;
+  margin: 0 auto;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
-p{
-  color:#263238;
+
+
+.icones-cartao {
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+  
+}
+
+.logo{
+  width: 40px;
+}
+
+h2 {
   text-align: center;
-
+  color: #C7C7C7;
+  font-weight: normal;
+  font-size: .8em;
+  margin-top: 2vh;
 }
 
- input[type=text]{
-padding-left:2em;
-outline-color:#FFD46E;
-}
- 
-
-
-.cartao{
-  width:85vw;
-  height:5vh;
-  margin-top:5px;
+.saiba {
+  color: #263238;
+  text-align: center;
+  font-size: .8em;
 }
 
-
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
 .validade{
-  margin-top: 10px;
-  width:45vw;
-  height:5vh;
-}
-.cv{
-  width:37.4vw;
-  height:5vh;
+  display: flex;
+  flex-direction: row;
+
 }
 
-.nome{
-  width:85vw;
-  height:5vh;
-  margin-top:10px;
+input[type="text"]{
+  width: 100%;
+  border: solid 1px #C7C7C7;
+  padding: 2vh 0px 2vh 15px;
+  color: #A6A6A6;
+  border-radius: 5px;
+  margin: 2vh 1vw;
 }
 
-.cpf{
-  width:85vw;
-  height:5vh;
-  margin-top:10px;
-}
-
-.apelido{
-  width:85vw;
-  height:5vh;
-  margin-top:10px;
-}
-.footer{
-  width:100%;
-  bottom:0;
-  height:120px;
+.creditos {
   background-color: #FFD46E;
-  
+  position: absolute;
+  bottom: -19.7vh;
+  left: 0;
+  padding: 1vh;
+  width: 100%;
 }
 
-.botao-cadastrar{
-  margin-left:45%;
-  bottom:23vh;
-  position:absolute;
-}
-.botao{
-  margin:0 auto;
-  font-size:30px;
-  border-radius: 4px;
- background-color: #DD6A57;
- color:white;
- padding:20px;
- padding-left:30%;
- padding-right:30%;
+.nomes {
+  font-size: .8em;
 }
 
-@media screen and (max-width:1100px) {
- 
-  h1{
-    color:white;
-    font-size:35px;
-    padding-bottom:10px;
-    text-align: center;
-
-    
-  
-  }
-  .container{
-		overflow: hidden;
-	}
-  header{
-    width:100%;
-    padding-left:12em;
-    padding-top:2em;
-    padding-bottom: 2em;
-    margin:0 auto;
-    
-  }
-  input[type=text]{
-    width:100vw;
-    outline-color:#FFD46E;
-    }
-  
-.validade{
-width:100vw;
-
- 
+.grupo-icone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cv{
-width:100vw;
-margin-top:10px;
+.botoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:4vh;
 }
-
-
-  footer{
-    width:100%;
-    bottom:0;
-  }
-
-  
+input[type="submit"] {
+  background: #DD6A57;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  width: 100vh;
+  height: 7vh;
+  color: white;
+  font-size: 1.2rem;
 }

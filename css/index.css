@@ -238,7 +238,7 @@ a {
   
 
   .dropdown .dropbtn {
-	font-size: 16px;
+	font-size: 13px;
 	border: none;
 	outline: none;
 	color: white;
@@ -246,11 +246,11 @@ a {
 	background-color: inherit;
 	font-family: inherit; 
 	margin: 0;
+    border-radius: 50%;	
   }
   
  	a:hover, .dropdown:hover .dropbtn {
-	background-color: #d6d6d6;
-
+	background-color: #DD6A57;
   }
 
 

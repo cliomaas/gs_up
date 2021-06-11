@@ -1,55 +1,66 @@
-* , *:before, *:after{ 
-    box-sizing:border-box; 
-    -moz-box-sizing:border-box; 
-    -webkit-box-sizing:border-box; 
-    -ms-box-sizing:border-box;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
 }
-html{
+
+html {
     height: 98vh;
     width: 100vw;
 }
-body{
-    background-image: url(../assets/teste.svg);
 
+body {
+    background-image: url(../assets/background_estatico.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 73vh;
     justify-content: center;
 }
+
 .img-logo {
-	width: 15vw;
-    margin-top: 15vh ;
+    width: 15vw;
+    margin-top: 15vh;
 }
-.pagina-atual{
-	color: #F48E1E;
-	font-weight: bold;
+
+.pagina-atual {
+    color: #F48E1E;
+    font-weight: bold;
 }
+
 a {
-	float: left;
-	font-size: 16px;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-.botoes{
+
+.botoes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-input{
+
+input {
     height: 60px;
     width: 286px;
     text-align: center;
     border-radius: 20px;
-    border:none;
+    border: none;
     background-color: #F48E1E;
     color: white;
     font-size: 18px;
@@ -58,105 +69,103 @@ input{
     margin-right: 1vw;
 }
 
-  .dropdown {
-	float: left;
-	overflow: hidden;
-  }
-  
-
-  .dropdown .dropbtn {
-	font-size: 16px;
-	border: none;
-	outline: none;
-	color: white;
-	padding: 14px 16px;
-	background-color: inherit;
-	font-family: inherit; 
-	margin: 0;
-  }
-  
- 	a:hover, .dropdown:hover .dropbtn {
-	background-color: #d6d6d6;
-
-  }
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
 
 
-  .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-  }
-  
+.dropdown .dropbtn {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 50%;
+}
 
-  .dropdown-content a {
-	float: none;
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-  }
-  
+a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #DD6A57;
+}
 
-  .dropdown-content a:hover {
-	background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-	display: block;
-  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .fas {
-	color: #F48E1E;
+    color: #F48E1E;
     font-size: 3em;
 }
 
-nav{
-	position: absolute;
+nav {
+    position: absolute;
 }
-.creditos{
+
+.creditos {
     background-color: #FFD46E;
     position: absolute;
-	bottom: -4.7vh;
+    bottom: -4.7vh;
     padding: 1vh;
-	width: 100vw;
-    left:0;
+    width: 100vw;
+    left: 0;
 }
-.nomes{
+
+.nomes {
     font-size: .8em;
 }
-p{
-	color: white;
+
+p {
+    color: white;
     font-size: 1.3em;
     margin: 0;
 }
+
 @media screen and (max-width:550px) {
-    body{
+    body {
         background-image: url("../assets/background\ small.svg");
         background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center center;
+        background-size: cover;
+        background-position: center center;
 
-    } 
+    }
+
     .img-logo {
         width: 50vw;
         margin-top: 7vh;
     }
-    .creditos{
-        bottom: -6vh !important;
+
+    .creditos {
+        bottom: -7vh !important;
         width: 100%;
     }
 
 }
-    
-  
-   
-
-   
-    
-    
-    
-   
