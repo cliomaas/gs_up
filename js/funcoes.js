@@ -14,7 +14,7 @@ function validar(event){
             }
         }
         if (validado){
-            window.location.href = "./portal.html";
+            window.location.href = "./home.html";
         } else {
             alert("Usuário ou senha incorretos!");
         }
@@ -27,6 +27,10 @@ function isValidCPF(cpf) {
     let novoCpf = String(cpf)
     var soma = 0
     var resto
+    if (novoCpf == "00000000000") {
+        alert("CPF inválido!");
+        return false
+    }
     for (var i = 1; i <= 9; i++) 
         soma = soma + parseInt(novoCpf.substring(i-1, i)) * (11 - i)
     resto = (soma * 10) % 11
@@ -91,7 +95,7 @@ function cadastroCpf(event) {
             variaveisParaMostrar[chave.name] = cadastro[index].value;
         });
         alert("As informações preenchidas são: " + JSON.stringify(variaveisParaMostrar, null,4));
-        window.location.href="portal.html"
+        window.location.href="index.html"
     }
 }
 
@@ -101,7 +105,7 @@ function cadastroCnpj(event) {
     var nome = document.getElementById("nome");
     var cnpj = document.getElementById("cnpj");
     var idade = document.getElementById("idade");
-    var descricao = document.getElementById("descricao");
+    var ramo = document.getElementById("ramo");
     var email = document.getElementById("email");
     var telefone = document.getElementById("telefone");
     var cep = document.getElementById("cep");
@@ -113,7 +117,7 @@ function cadastroCnpj(event) {
     var estado = document.getElementById("estado");
     var pais = document.getElementById("pais");
 
-    var cadastro=[nome,cnpj,idade,descricao,email,telefone,logradouro,cep,numero,bairro,cidade,estado,pais];
+    var cadastro=[nome,cnpj,idade,ramo,email,telefone,logradouro,cep,numero,bairro,cidade,estado,pais];
     var camposVazios=[];
     var camposPreenchidos=[]
     for(i=0;i<cadastro.length;i++){
@@ -132,6 +136,6 @@ function cadastroCnpj(event) {
             variaveisParaMostrar[chave.name] = cadastro[index].value;
         });
         alert("As informações preenchidas são: " + JSON.stringify(variaveisParaMostrar, null,4));
-        window.location.href="portal.html"
+        window.location.href="index.html"
     }
 }

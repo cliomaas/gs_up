@@ -19,27 +19,27 @@
                     <legend>Endereço</legend>
 					<div class="form-group">
                         <label for="Endereço">Logradouro:</label>
-						<input type="text" class="form-control" name="Endereço" placeholder="  Digite o seu Logradouro" id="logradouro" required>
+						<input type="text" class="form-control" name="Endereço" placeholder="Digite o seu Logradouro" id="logradouro" required>
 					</div>
 					<div class="form-group">
                         <label for="CEP">Cep:</label>
-						<input type="text" class="form-control" name="CEP" id="cep" placeholder="  Digite o seu Cep" required>
+						<input type="text" class="form-control" name="CEP" id="cep" placeholder="Digite o seu Cep" required>
 					</div>
 					<div class="form-group">
                         <label for="Número">Número:</label>
-						<input type="text" class="form-control" name="Número" id="numero" placeholder="  Digite o seu Número" required>
+						<input type="text" class="form-control" name="Número" id="numero" placeholder="Digite o seu Número" required>
 					</div>
 					<div class="form-group">
                         <label for="Complemento">Complemento:</label>
-						<input type="text" class="form-control" name="Complemento" id="complemento" placeholder="  Complemento">
+						<input type="text" class="form-control" name="Complemento" id="complemento" placeholder="Complemento">
 					</div>
 					<div class="form-group">
                         <label for="Bairro">Bairro:</label>
-						<input type="text" class="form-control" name="Bairro" id="bairro" placeholder="  Digite o seu Bairro" required>
+						<input type="text" class="form-control" name="Bairro" id="bairro" placeholder="Digite o seu Bairro" required>
 					</div>
 					<div class="form-group">
                         <label for="Cidade">Cidade:</label>
-						<input type="text" class="form-control" name="Cidade" id="cidade" placeholder="  Digite a sua Cidade" required>
+						<input type="text" class="form-control" name="Cidade" id="cidade" placeholder="Digite a sua Cidade" required>
 					</div>
 					<div class="form-group">
                         <label for="Estado">Estado:</label>
@@ -75,41 +75,40 @@
 					</div>
 					<div class="form-group">
                         <label for="País">País:</label>
-						<input type="text" class="form-control" name="País" placeholder="  Digite o seu Pais" id="pais" required>
+						<input type="text" class="form-control" name="País" placeholder="Digite o seu Pais" id="pais" required>
 					</div>
 				</fieldset>
                 <fieldset>
                     <legend>Dados da Empresa</legend>
                     <div class="form-group">
                         <label for="Nome">Nome da Empresa:</label>
-                        <input type="text" class="form-control" id="nome" name="Nome" placeholder="  Digite o nome. "
+                        <input type="text" class="form-control" id="nome" name="Nome" placeholder="Digite o nome da empresa."
                             required pattern="[A-Za-z]{1,30}">
                     </div>
                     <div class="form-group">
-                        <label for="CPF">CNPJ:</label>
-                        <input type="text" class="form-control" id="cpf" name="CPF" placeholder="  Digite o CNPJ."
-                        required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
+                        <label for="CNPJ">CNPJ:</label>
+                        <input type="text" class="form-control" id="cnpj" name="CNPJ" placeholder="Digite o CNPJ."
+                        required pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
                     </div>
                     <div class="form-group">
                         <label for="Idade">Idade :</label>
-                        <input type="number" id="idade" class="form-control" name="Idade" placeholder="  Digite sua idade."
+                        <input type="number" id="idade" class="form-control" name="Idade" placeholder="Digite a idade da empresa"
                         required>
                     </div>
+                    <label for="Ramo">Ramo da empresa:</label>
                     <div class="form-group">
-                        <label for="Sexo">Sexo:</label>
-                        <select name="Sexo" class="" id="sexo" required>
-                            <option value="Feminino" selected>Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Outro">Outro</option>
-                            <option value="PrefiroNaoDizer">Prefiro Não Dizer</option>
-    
-                        </select>
+						<select name="Ramo" class="" id="ramo" required>
+							<option value="FAR">Farmácia</option>
+                            <option value="ALI">Alimentos</option>
+                            <option value="ESP">Esporte</option>
+                            <option value="PET">Pet Shop</option>
+                            <option value="JAR">Jardim</option>                            
+                        </select>                       
                     </div>
-    
     
                     <div class="form-group">
                         <label for="Email">Email:</label>
-                        <input type="email" class="form-control" name="Email" placeholder="  Digite seu email."
+                        <input type="email" class="form-control" name="Email" placeholder=" Digite seu email."
                         required id="email">
                     </div>
     
