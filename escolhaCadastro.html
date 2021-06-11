@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97e3160b5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/escolhaCadastro.css">
 </head>
+
 <body>
-    <div class="container">
-        <div >
-            <img src="./assets/logo.gif" alt="logo" class="logo">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="icon nav-icon-5">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./index.html">Login</a>
+                    <a class="pagina-atual" href="./escolhaCadastro.html">Cadastro</a>
+                    <a href="./home.html">Perfil</a>
+                    <a href="./pet-shop.html">Loja</a>
+                    <a href="./carrinho.html">Carrinho</a>
+                    <a href="./pagamento.html">Pagamento</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="logo">
+            <img class="img-logo" src="./assets/logo.gif">
         </div>
-        <div >
-           <a href="./CadastroCPF.html"><input type="buttom" value="Cliente" class="login"></a>
+        <div class="botoes">
+                <input type="button" class="pessoa-fis" value="Pessoa Física" onclick="window.location.href='./cadastrocpf.html'">
+                <input type="button" class="pessoa-jur" value="Pessoa Jurídica" onclick="window.location.href='./cadastrocnpj.html'">
         </div>
-        <div >
-           <a href="./CadastroCNPJ.html"><input type="buttom" value="Loja" class="cadastro"></a>
-        </div>  
-    </div>
-    
+        <footer>
+            <div class="creditos">
+                <p class="nomes"><strong>Créditos:</strong> Ana Ronqui - RM 86641 / Clio Maas - RM 87046 / João Victor
+                    Santos - RM 88372 / Reginaldo Souza Junior - RM 89050</p>
+            </div>
+        </footer>
+    </section>
 </body>
+
 </html>
-  

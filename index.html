@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97e3160b5c.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/funcoes.js"></script>
     <title>Página Inicial - UP!</title>
 </head>
@@ -14,42 +15,62 @@
 <body>
     <header>
         <nav>
-            
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="icon nav-icon-5">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </button>
+                <div class="dropdown-content">
+                    <a class="pagina-atual" href="./index.html">Login</a>
+                    <a href="./escolhaCadastro.html">Cadastro</a>
+                    <a href="./home.html">Perfil</a>
+                    <a href="./pet-shop.html">Loja</a>
+                    <a href="./carrinho.html">Carrinho</a>
+                    <a href="./pagamento.html">Pagamento</a>
+                </div>
+            </div>
         </nav>
     </header>
 
-        <div class="container">
-            <div class="content">
-                <div class="nuvem n01">
-                    <img class="nuvem" src="./assets/cloud.svg">
-                </div>
-                <div class="nuvem n02">
-                    <img class="nuvem" src="./assets/cloud.svg">
-                </div>
-                <div class="logo">
-                    <img class="img-logo" src="./assets/logo.gif" alt="">
-                    <form class="login-form" onsubmit="validar(event)">
-                        <label for="usuario">Usuário:</label>
-                        <input type="usuario" name="usuario" id="usuario" required>
-                        <label for="password">Senha:</label>
-                        <input type="password" name="password" id="senha" minlength="3" required pattern="[0-9]{5}">
-                        <a href="#" class="form-group__forgot-password" onclick="alert('Não implementado')">Esqueci minha
-                            senha</a>
-                        <div class="botoes">
-                            <input id="login" type="submit" value="Login">
-                            <a href="./login_Register.html"><input id="cadastro" type="button" value="Cadastro"></a>
-                        </div>
-                    </form>
-                </div>
-                <div class="nuvem n03">
-                    <img class="nuvem" src="./assets/cloud.svg">
-                </div>
-                <div class="nuvem n04">
-                    <img class="nuvem" src="./assets/cloud.svg">
-                </div>
+    <div class="container">
+        <div class="content">
+            <div class="nuvem n01">
+                <img class="nuvem" src="./assets/cloud.svg">
             </div>
-    
+            <div class="nuvem n02">
+                <img class="nuvem" src="./assets/cloud.svg">
+            </div>
+            <div class="logo">
+                <img class="img-logo" src="./assets/logo.gif" alt="">
+                <form class="login-form" onsubmit="validar(event)">
+                    <label for="usuario">Usuário:</label>
+                    <input type="usuario" name="usuario" id="usuario" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="senha" minlength="3" required pattern="[0-9]{5}">
+                    <a href="#" class="form-group__forgot-password" onclick="alert('Não implementado')">Esqueci minha
+                        senha</a>
+                    <div class="botoes">
+                        <input id="login" type="submit" value="Login">
+                        <input id="cadastro" type="button" value="Cadastro" onclick="window.location.href='./escolhaCadastro.html'">
+                    </div>
+                </form>
+            </div>
+            <div class="nuvem n03">
+                <img class="nuvem" src="./assets/cloud.svg">
+            </div>
+            <div class="nuvem n04">
+                <img class="nuvem" src="./assets/cloud.svg">
+            </div>
         </div>
+        <footer>
+            <div class="creditos">
+                <p class="nomes"><strong>Créditos:</strong> Ana Ronqui - RM 86641 / Clio Maas - RM 87046 / João Victor
+                    Santos - RM 88372 / Reginaldo Souza Junior - RM 89050</p>
+            </div>
+        </footer>
+    </div>
 
 </body>
+
 </html>

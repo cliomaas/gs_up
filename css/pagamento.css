@@ -5,6 +5,7 @@
 }
 body{
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
 header{
@@ -19,7 +20,6 @@ header{
 h1{
   color:white;
   font-size:35px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-bottom:10px;
 }
 
@@ -52,13 +52,11 @@ h1{
 h2{
   text-align: center;
   color:#C7C7C7;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 p{
   color:#263238;
   text-align: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -132,7 +130,6 @@ outline-color:#FFD46E;
   h1{
     color:white;
     font-size:35px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-bottom:10px;
     text-align: center;
 

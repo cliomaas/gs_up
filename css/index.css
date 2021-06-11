@@ -1,3 +1,10 @@
+* , *:before, *:after{ 
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -ms-box-sizing:border-box;
+  }
+
 html {
 	height: 98vh;
 	width: 100vw;
@@ -10,6 +17,7 @@ body {
 	background-image: url(../assets/predios.png);
 	background-position: bottom;
 	background-position-y: 70vh;
+	background-attachment: fixed;
 	background-repeat: repeat-x;
 	margin: 0;
     font-family: 'Lato', sans-serif;
@@ -113,6 +121,22 @@ body {
     margin-top: 15vh ;
 }
 
+.creditos{
+    background-color: #FFD46E;
+    position: absolute;
+	bottom: -10.7vh;
+    padding: 1vh;
+	width: 100vw
+}
+.nomes{
+    font-size: .8em;
+}
+p{
+	color: white;
+    font-size: 1.3em;
+    margin: 0;
+}
+
 input[type="button"],
 input[type="submit"] {
     min-width: 10vw;
@@ -143,10 +167,12 @@ input[type="submit"] {
 
 
 .botoes {
-    display: flex;
+	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-form {
@@ -185,12 +211,84 @@ label {
 }
 
 
-
 .logo{
 	display: flex;
 	flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
+.pagina-atual{
+	color: #F48E1E;
+	font-weight: bold;
+}
+a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+
+  .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+
+  .dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; 
+	margin: 0;
+  }
+  
+ 	a:hover, .dropdown:hover .dropbtn {
+	background-color: #d6d6d6;
+
+  }
+
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+.fas {
+	color: #F48E1E;
+	font-size: 3em;
+}
+
+nav{
+	position: absolute;
 }
 
 

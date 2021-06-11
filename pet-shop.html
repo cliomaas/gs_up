@@ -13,10 +13,27 @@
 <body>
     <header>
         <div class="forma-topo">
+
             <div class="barra-topo">
-                <img class="seta-voltar" src="./assets/seta-voltar.svg" onclick="window.location.href = './home.html'">
+                <nav>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <div class="icon nav-icon-5">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./index.html">Login</a>
+                            <a href="./escolhaCadastro.html">Cadastro</a>
+                            <a  href="./home.html">Perfil</a>
+                            <a class="pagina-atual" href="./pet-shop.html">Loja</a>
+                            <a href="./carrinho.html">Carrinho</a>
+                            <a href="./pagamento.html">Pagamento</a>
+                        </div>
+                    </div>
+                </nav>
                 <p class="titulo-cat petshop">PET SHOP</p>
-                <img class="carrinho" src="./assets/carrinho.svg">
+                <img class="carrinho" src="./assets/carrinho.svg" onclick="window.location.href='./carrinho.html'">
             </div>
             <div class="info-usuario">
                 <img class="icone-perfil" src="./assets/icone-perfil.svg" alt="icone perfil">
@@ -56,13 +73,13 @@
                 </div>
             </div>
             <div class="icones-estab">
-                <div class="thumb estab-01" onclick="window.location.href = './produtos.html'">
+                <div class="thumb estab-01" onclick="alert('Não implementado, clique no carrinho!')">
                     <img class="img-estab sudica" src="./assets/sudica.png">
                     <p class="p-02 endereco-estab">R. Alencar Araripe, 525</p>
                     <p class="p-02 nome-estab"><strong>Sudica Pet Shop</strong></p>
 
                 </div>
-                <div class="thumb estab-02" onclick="alert('Não implementado, clique em Sudica Pet Shop')">
+                <div class="thumb estab-02" onclick="alert('Não implementado, clique no carrinho!')">
                     <img class="img-estab petlulu" src="./assets/petlulu.png">
                     <p class="p-02 endereco-estab">R. Joaninha Silva</p>
                     <p class="p-02 nome-estab"><strong>Pet Lulu</strong></p>
@@ -75,8 +92,8 @@
             <div class="menu-mobile">
                 <img class="icones-menu-mobile" src="./assets/friendly.svg" alt="friendly">
                 <img class="icones-menu-mobile" src="./assets/mensagens.svg" alt="mensagens">
-                <div class="pag-atual">
-                    <img class="icone-pag-atual" src="./assets/home.svg" alt="home">
+                <div class="pag-atual-mobile">
+                    <img class="icone-pag-atual-mobile" src="./assets/home.svg" alt="home">
                 </div>
                 <img class="icones-menu-mobile" src="./assets/favoritos.svg" alt="favoritos">
                 <img class="icones-menu-mobile" src="./assets/perfil.svg" alt="perfil">

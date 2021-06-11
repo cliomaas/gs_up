@@ -1,36 +1,50 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* , *:before, *:after{ 
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -ms-box-sizing:border-box;
 }
-
+html{
+    height: 98vh;
+    width: 100vw;
+}
 body{
-    background-image: url("../assets/teste.svg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center center;
-    background-attachment:fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
+    background-image: url(../assets/teste.svg);
+
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
 
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    height: 73vh;
     justify-content: center;
-    height: 100vh;
-    width: 40vw;
-    
 }
-
-.logo{
-  height: 320px;
-  margin: 3em;
+.img-logo {
+	width: 15vw;
+    margin-top: 15vh ;
 }
-
-.login{
+.pagina-atual{
+	color: #F48E1E;
+	font-weight: bold;
+}
+a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input{
     height: 60px;
     width: 286px;
     text-align: center;
@@ -39,73 +53,103 @@ body{
     background-color: #F48E1E;
     color: white;
     font-size: 18px;
-    margin: 2.5em 0.5em 0.5em 5em;
     cursor: pointer;
+    margin-bottom: 2vh;
+    margin-right: 1vw;
 }
 
-.cadastro{
-    height: 60px;
-    width: 286px;
-    text-align: center;
-    border-radius: 20px;
-    border-color: #FFC727;
-    color: #FFC727;
-    font-size: 18px;
-    margin: 2.5em 0.5em 0.5em 0.5em;
-    cursor: pointer;
-}
-   
-       
+  .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
 
+  .dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; 
+	margin: 0;
+  }
+  
+ 	a:hover, .dropdown:hover .dropbtn {
+	background-color: #d6d6d6;
+
+  }
+
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+.fas {
+	color: #F48E1E;
+    font-size: 3em;
+}
+
+nav{
+	position: absolute;
+}
+.creditos{
+    background-color: #FFD46E;
+    position: absolute;
+	bottom: -4.7vh;
+    padding: 1vh;
+	width: 100vw;
+    left:0;
+}
+.nomes{
+    font-size: .8em;
+}
+p{
+	color: white;
+    font-size: 1.3em;
+    margin: 0;
+}
 @media screen and (max-width:550px) {
     body{
         background-image: url("../assets/background\ small.svg");
         background-repeat: no-repeat;
         background-size:cover;
         background-position:center center;
-        background-attachment:fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
     } 
-    
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 40vw;
-        
+    .img-logo {
+        width: 50vw;
+        margin-top: 7vh;
     }
-    
-    .logo{
-        height: 180px;
-        margin: 3em;
-      }
-      
-      .login{
-          height: 47px;
-          width: 286px;
-          text-align: center;
-          border-radius: 20px;
-          border:none;
-          background-color: #F48E1E;
-          color: white;
-          font-size: 18px;
-          margin: 0.5em;
-      }
-      
-      .cadastro{
-          height: 47px;
-          width: 286px;
-          text-align: center;
-          border-radius: 20px;
-          
-          border-color: #FFC727;
-          color: #FFC727;
-          margin: 0.5em;
-      }
+    .creditos{
+        bottom: -6vh !important;
+        width: 100%;
+    }
+
 }
     
   

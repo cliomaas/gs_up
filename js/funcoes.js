@@ -55,21 +55,13 @@ function cadastroCpf(event) {
     event.preventDefault();
 
     var nome = document.getElementById("nome");
+    var sobrenome = document.getElementById("sobrenome");
     var cpf = document.getElementById("cpf");
-    var idade = document.getElementById("idade");
-    var sexo = document.getElementById("sexo");
     var email = document.getElementById("email");
     var telefone = document.getElementById("telefone");
-    var logradouro = document.getElementById("logradouro");
-    var cep = document.getElementById("cep");
-    var numero = document.getElementById("numero");
-    var complemento = document.getElementById("complemento");
-    var bairro = document.getElementById("bairro");
-    var cidade = document.getElementById("cidade");
-    var estado = document.getElementById("estado");
-    var pais = document.getElementById("pais");
+    var senha = document.getElementById("senha");
 
-    var cadastro=[nome,cpf,idade,sexo,email,telefone,logradouro,cep,numero,bairro,cidade,estado,pais];
+    var cadastro=[nome,sobrenome,cpf,email,telefone,senha];
     var camposVazios=[];
     var camposPreenchidos=[]
     for(i=0;i<cadastro.length;i++){
@@ -90,11 +82,7 @@ function cadastroCpf(event) {
         if( !isValidCPF(cpf.value)){
             return false;
         }
-        let variaveisParaMostrar = {};
-        cadastro.forEach(function(chave,index){
-            variaveisParaMostrar[chave.name] = cadastro[index].value;
-        });
-        alert("As informações preenchidas são: " + JSON.stringify(variaveisParaMostrar, null,4));
+        alert("Cadastro realizado com sucesso!");
         window.location.href="index.html"
     }
 }
@@ -104,20 +92,12 @@ function cadastroCnpj(event) {
 
     var nome = document.getElementById("nome");
     var cnpj = document.getElementById("cnpj");
-    var idade = document.getElementById("idade");
-    var ramo = document.getElementById("ramo");
     var email = document.getElementById("email");
     var telefone = document.getElementById("telefone");
-    var cep = document.getElementById("cep");
-    var logradouro = document.getElementById("logradouro");
-    var numero = document.getElementById("numero");
-    var complemento = document.getElementById("complemento");
-    var bairro = document.getElementById("bairro");
-    var cidade = document.getElementById("cidade");
-    var estado = document.getElementById("estado");
-    var pais = document.getElementById("pais");
+    var ramo = document.getElementById("ramo");
+    var senha = document.getElementById("senha");
 
-    var cadastro=[nome,cnpj,idade,ramo,email,telefone,logradouro,cep,numero,bairro,cidade,estado,pais];
+    var cadastro=[nome,cnpj,email,telefone,ramo,senha];
     var camposVazios=[];
     var camposPreenchidos=[]
     for(i=0;i<cadastro.length;i++){
@@ -131,11 +111,7 @@ function cadastroCnpj(event) {
     if(camposVazios.length){
     alert("os campos " + camposVazios.join(", ") + " precisam ser preenchidos!");
     }else{            
-        let variaveisParaMostrar = {};
-        cadastro.forEach(function(chave,index){
-            variaveisParaMostrar[chave.name] = cadastro[index].value;
-        });
-        alert("As informações preenchidas são: " + JSON.stringify(variaveisParaMostrar, null,4));
+        alert("Cadastro feito com sucesso! Cadastre seus produtos.");
         window.location.href="index.html"
     }
 }
