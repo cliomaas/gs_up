@@ -238,7 +238,19 @@ p {
     justify-content: space-around;
     padding: 2vh 0;
 }
-
+.pag-atual-mobile {
+    z-index: 9;
+    position: relative;
+    background-color: #DD6A57;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -28px;
+}
+.icone-pag-atual-mobile {
+    display: block;
+    margin: 2vh auto;
+}
 .pag-atual {
     z-index: 9;
     position: relative;
@@ -269,10 +281,20 @@ p {
         height: 56vh;
         justify-content: space-evenly
     }
-
+    .qtd-pontos {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2vw;
+    }
     .creditos {
         bottom: -4vh !important;
         width: 100%;
+    }
+    .pontos {
+        display: flex;
+        flex-direction: row;
+        width: 33vw;
+        justify-content: flex-start;
     }
 }
 
