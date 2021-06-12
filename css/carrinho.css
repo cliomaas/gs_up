@@ -213,3 +213,23 @@ input[type="button"] {
 .nomes {
     font-size: .8em;
 }
+
+@media screen and (min-width:1500px) {
+
+    .produtos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .total {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .total-p {
+        font-size: 1.5em;
+        margin-right: 90px;
+    }
+
+}

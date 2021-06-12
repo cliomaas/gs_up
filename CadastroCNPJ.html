@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro - Pessoa Jurídica</title>
     <link rel="stylesheet" href="./css/cadastroCNPJ.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -38,12 +38,12 @@
         <div class="wrapper">
             <form class="pt-4" onsubmit="cadastroCnpj(event)" method="POST">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="nome" name="Nome" placeholder="Nome da empresa" required
-                        pattern="[A-Za-z]{1,30}">
+                    <input type="text" class="form-control" id="nome" name="Nome" maxlength="30"
+                        placeholder="Nome da empresa" required>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="cnpj" name="CNPJ" placeholder="CNPJ" required
-                        pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
+                        pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" title="Digite seu CNPJ no formato 'XXXXXXXXXXX'">
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control" name="Email" placeholder="Email" required id="email">
@@ -51,7 +51,7 @@
                 <div class="form-group">
                     <input type="text" class="form-control" name="Telefone" id="telefone"
                         placeholder="Telefone (1199999999)" maxlength="15" pattern="^[1-9]{2}[0-9]{4,5}[0-9]{4}$"
-                        required>
+                        required title="Telefone deve ser no formato '11999999999'">
                 </div>
                 <div class="form-group">
                     <select name="Ramo" class="form-control" id="ramo" required>
@@ -60,13 +60,13 @@
                         <option value="ALI">Alimentos</option>
                         <option value="ESP">Esporte</option>
                         <option value="PET">Pet Shop</option>
-                        <option value="JAR">Jardim</option>                            
-                    </select>                       
+                        <option value="JAR">Jardim</option>
+                    </select>
                 </div>
                 <div class="form-group" id="instrucoes">
                     <input type="password" class="form-control" name="Senha" placeholder="Senha" required maxlength="15"
-                        id="senha" pattern=(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>
-                    <p class="instrucao">Mínimo 8 caracteres. Use letras maiúsculas, minúsculas e números.</p>
+                        id="senha" pattern="[0-9]{5}" title="Digite o número do seu RM. Apenas Números.">
+                    <p class="instrucao">Digite o número do seu RM.</p>
                 </div>
                 <div>
                     <input type="submit" value="Cadastrar" class="entrar">
@@ -74,7 +74,8 @@
             </form>
             <footer>
                 <div class="creditos">
-                    <p class="nomes"><strong>Créditos:</strong> Ana Ronqui - RM 86641 / Clio Maas - RM 87046 / João Victor
+                    <p class="nomes"><strong>Créditos:</strong> Ana Ronqui - RM 86641 / Clio Maas - RM 87046 / João
+                        Victor
                         Santos - RM 88372 / Reginaldo Souza Junior - RM 89050</p>
                 </div>
             </footer>

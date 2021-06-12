@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <script type="text/javascript" src="./js/funcoes.js"></script>
   <script src="https://kit.fontawesome.com/97e3160b5c.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <script type="text/javascript" src="./js/funcoes.js"></script>
+  <title>Cadastre seu cartão</title>
 </head>
 
 <body>
@@ -29,8 +30,9 @@
         <a href="./escolhaCadastro.html">Cadastro</a>
         <a href="./home.html">Perfil</a>
         <a href="./pet-shop.html">Loja</a>
-        <a class="pagina-atual" href="./carrinho.html">Carrinho</a>
-        <a href="./pagamento.html">Pagamento</a>
+        <a  href="./carrinho.html">Carrinho</a>
+        <a class="pagina-atual" href="./pagamento.html">Pagamento</a>
+        <a href="./carrinho_finalizar.html">Finalizar</a>
       </div>
     </div>
   </nav>
@@ -49,25 +51,25 @@
   </div>
   <form class="form" method="POST" onsubmit="validarCartao(event)">
     <div class="form-group">
-      <input type="text" class="form-group cartao" name="txtCartao" id="numcartao" required pattern="[0-9]{13,16}" placeholder="Número do Cartão">
+      <input type="text" class="form-group cartao" name="Número do Cartão" id="numcartao" required pattern="[0-9]{13,16}" placeholder="Número do Cartão">
     </div>
     <div class="form-group validade">
-      <input type="text" class="form-group-02 validade" name="txtValidade" pattern="\d{1,2}/\d{4}" required id="validade" placeholder="Validade">
-      <input type="text" class="form-group-02 cv" name="txtCv" id="txtCv" pattern="{3}" placeholder="CVV" class="name">
+      <input type="text" class="form-group-02 validade" name="Validade do Cartão" pattern="\d{1,2}/\d{4}" required id="validade" placeholder="Validade">
+      <input type="text" class="form-group-02 cv" name="CVV" id="cvv" pattern="[0-9]{3}" placeholder="CVV" class="name">
     </div>
 
     <div class="form-group">
-      <input type="text" class="form-group nome" name="txtNome" id="nome" required
-      pattern="[A-Za-z]{1,30}"placeholder="Nome do Titular">
+      <input type="text" class="form-group nome" name="Nome do titular" id="nome" required
+      pattern="[A-Za-z- ]{1,30}"placeholder="Nome do Titular">
     </div>
 
     <div class="form-group">
-      <input type="text" class="form-group cpf" name="txtCpf" id="cpf" placeholder="CPF do titular" required
+      <input type="text" class="form-group cpf" name="CPF" id="cpf" placeholder="CPF do titular" required
       pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
     </div>
 
     <div class="form-group">
-      <input type="text" class="form-group apelido" name="txtApelido" id="apelido" placeholder="Apelido do Cartão" pattern="[A-Za-z]{1,30}">
+      <input type="text" class="form-group apelido" name="Apelido" id="apelido" placeholder="Apelido do Cartão" pattern="[A-Za-z]{1,30}">
     </div>
     <div class="botoes">
       <input type="submit" value="Cadastrar" class="botao">

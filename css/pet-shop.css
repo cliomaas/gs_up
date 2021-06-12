@@ -175,9 +175,6 @@ p {
     justify-content: flex-end;
 }
 
-.esporte {
-    margin-right: 0 !important;
-}
 
 .icones-cat {
     display: flex;
@@ -187,40 +184,6 @@ p {
     margin-top: 7vh;
 }
 
-.pet {
-    background-color: #FFD46E;
-    background-image: url(../assets/osso.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.farma {
-    background-color: #6DD3DB;
-    background-image: url(../assets/farma.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.jardim {
-    background-color: #93CA93;
-    background-image: url(../assets/jardim.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.alimentos {
-    background-color: #E86F2A;
-    background-image: url(../assets/bolo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.esporte {
-    background-color: #B299D3;
-    background-image: url(../assets/bicicleta.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .nome-cat {
     font-size: 0.8em;
@@ -334,7 +297,7 @@ p {
     flex-direction: row;
 }
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:800px) {
     .forma-topo {
         justify-content: space-between;
     }

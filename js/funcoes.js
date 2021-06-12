@@ -115,3 +115,37 @@ function cadastroCnpj(event) {
         window.location.href="index.html"
     }
 }
+
+function validarCartao(event){
+        event.preventDefault();
+
+    var numcartao = document.getElementById("numcartao");
+    var validade = document.getElementById("validade");
+    var cvv = document.getElementById("cvv");
+    var nome = document.getElementById("nome");
+    var cpf = document.getElementById("cpf");
+
+
+    var cadastro=[numcartao,validade,cvv,nome,cpf];
+    var camposVazios=[];
+    var camposPreenchidos=[]
+    for(i=0;i<cadastro.length;i++){
+        if(cadastro[i].value == ""){
+            camposVazios.push(cadastro[i].name);
+
+        }else{
+
+            camposPreenchidos.push(cadastro[i].value);
+        }
+    }
+    if(camposVazios.length){
+    alert("os campos " + camposVazios.join(", ") + " precisam ser preenchidos!");
+    }else{            
+        if( !isValidCPF(cpf.value)){
+            return false;
+        }
+        alert("Cadastro realizado com sucesso!");
+        window.location.href="carrinho_finalizar.html"
+    }
+
+}
