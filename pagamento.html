@@ -51,25 +51,25 @@
   </div>
   <form class="form" method="POST" onsubmit="validarCartao(event)">
     <div class="form-group">
-      <input type="text" class="form-group cartao" name="Número do Cartão" id="numcartao" required pattern="[0-9]{13,16}" placeholder="Número do Cartão">
+      <input type="text" class="form-group cartao" name="Número do Cartão" id="numcartao" required pattern="[0-9]{13,16}" placeholder="Número do Cartão" title="O número deve possuir de 13 a 16 caracteres. Não utilize letras.">
     </div>
     <div class="form-group validade">
-      <input type="text" class="form-group-02 validade" name="Validade do Cartão" pattern="\d{1,2}/\d{4}" required id="validade" placeholder="Validade">
+      <input type="text" class="form-group-02 validade" name="Validade do Cartão" pattern="\d{1,2}/\d{4}" required id="validade" placeholder="Validade" title="Digite a data no formato 'XX/XXXX'">
       <input type="text" class="form-group-02 cv" name="CVV" id="cvv" pattern="[0-9]{3}" placeholder="CVV" class="name">
     </div>
 
     <div class="form-group">
       <input type="text" class="form-group nome" name="Nome do titular" id="nome" required
-      pattern="[A-Za-z- ]{1,30}"placeholder="Nome do Titular">
+      pattern="[A-Za-z- ]{1,30}"placeholder="Nome do Titular" title="Digite seu nome completo.">
     </div>
 
     <div class="form-group">
       <input type="text" class="form-group cpf" name="CPF" id="cpf" placeholder="CPF do titular" required
-      pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
+      pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="Digite seu CPF no formato 'XXXXXXXXXXX'">
     </div>
 
     <div class="form-group">
-      <input type="text" class="form-group apelido" name="Apelido" id="apelido" placeholder="Apelido do Cartão" pattern="[A-Za-z]{1,30}">
+      <input type="text" class="form-group apelido" name="Apelido" id="apelido" placeholder="Apelido do Cartão">
     </div>
     <div class="botoes">
       <input type="submit" value="Cadastrar" class="botao">
